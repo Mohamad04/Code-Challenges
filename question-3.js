@@ -1,10 +1,8 @@
 const findHighestOrderValue = (orders) => {
   var indexArray = 0,
       max = 0;
-
   for(var i = 0 ; i < orders.length ; i++){        
     var sum = 0;
-
     for(var j = 0 ; j < orders[i].length ; j++){   
        sum += orders[i][j] ;
     }
@@ -13,9 +11,7 @@ const findHighestOrderValue = (orders) => {
       indexArray = i;
     }
   }
- 
   return indexArray;
-
 }
 
 console.log( findHighestOrderValue([[19,2,3], [2,3,4],[0,2,3], [10,3,4]]) ); // output: 1
