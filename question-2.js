@@ -1,19 +1,28 @@
 function encryptText(text) {
+	
+    let code = "";
+	
+	if(  text == 0 || text == "" || text == undefined){
+		return "wrong input ";
+	}
+	else {
 
-var message = "";
-var arrayText = text.split(" ");
+   let arrayOfWords = text.toString().split(" ");
 
-for(var i =0; i < arrayText.length; i++){
-  if((arrayText[i].length) % 3 == 0){
-      message +="0";
-      
-  }else{
-      message +="1";
-  } 
-} 
+	arrayOfWords = arrayOfWords.filter(word => word !== '');
 
-return message;
+   arrayOfWords.forEach(function(word) {
+       if(word.length % 3 == 0 )
+            code += "0";
+       else code += "1";
+   });
+
+   return code;
+	}
+
 }
 
-console.log( encryptText("How are you?") ); // this must print 001
-console.log( encryptText("The quick brown fox jumps over the lazy dog") ); // this must print 011011010
+console.log(encryptText("Saleem"));  
+console.log(encryptText("Serhan         I like javascript"));  
+console.log(encryptText(0));  
+console.log(encryptText( ));  
