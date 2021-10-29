@@ -77,10 +77,22 @@ Use the provided starting file (optional).
 
 --------------
 
+6- Given a base- integer, , convert it to binary (base-). Then find and print the base- integer denoting the maximum number of consecutive 's in 's binary representation. When working with different bases, it is common to show the base as a subscript.
+
+Example
+n =125
+
+The binary representation of 125  is 1111101. In base , there are 5 consecutive ones in two groups. 
+Print the maximum, 5.
 
 
+Print a single base-10 integer that denotes the maximum number of consecutive 1's in the binary representation of n.
 
+ Input   5
+ Output 1
 
+ Input 13
+ Output 2
 
 
 
