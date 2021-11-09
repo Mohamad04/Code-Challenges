@@ -8,11 +8,8 @@ const calculateSeatsBookingPercentage = (firstRowSeatsNumber, bookedSeats) => {
       return 0;
     
       return   seats = n + numberOfSeats(n-1);    
-    
   }
-  
   return   Math.round(bookedSeats * 100 / numberOfSeats(firstRowSeatsNumber)) +"%";
-
 }
 
 console.log(calculateSeatsBookingPercentage( 7, 7 ));  

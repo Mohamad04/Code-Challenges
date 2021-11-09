@@ -11,7 +11,7 @@ const findCommonLettersInWords = (words) => {
       });
   });
 
-  console.log(commonLetters);
+
   let result = [];
 
   Object.keys(commonLetters).forEach(letter => {

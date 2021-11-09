@@ -1,3 +1,10 @@
+		
+			last Question:   12   
+
+
+---  missing question: [6]
+
+
 1-	
 	When you post a message on Facebook, depending on the number of people who like your post, Facebook displays different information.
 If no one likes your post, it doesn’t display anything.
@@ -5,20 +12,15 @@ If only one person likes your post, it displays: the user name
 If two people like your post, it displays: [Friend 1] and [Friend 2]
 If more than two people like your post, it displays: [friend 1], [friend 2], and [number of other people] others like your post.
 
-
 Write a function that accepts a list of user names. Display a message based on the above pattern.
 
 
-
-
 Input: ['Saleem', 'Osama']
-
 
 Output: Saleem and Osama
 
 
 Input: ['Saleem', 'Ameer', 'Khaled', 'Ahmed'] 
-
 
 Output: Saleem, Ameer, and 2 others like your post
 
@@ -77,23 +79,7 @@ Use the provided starting file (optional).
 
 --------------
 
-6- Given a base- integer, , convert it to binary (base-). Then find and print the base- integer denoting the maximum number of consecutive 's in 's binary representation. When working with different bases, it is common to show the base as a subscript.
-
-Example
-n =125
-
-The binary representation of 125  is 1111101. In base , there are 5 consecutive ones in two groups. 
-Print the maximum, 5.
-
-
-Print a single base-10 integer that denotes the maximum number of consecutive 1's in the binary representation of n.
-
- Input   5
- Output 1
-
- Input 13
- Output 2
-
+6- 
 
 
 
@@ -161,3 +147,25 @@ Input:
 [{"from": “Kuala Lumpur Airport”, “to”: “Kuantan"},{"from": “Dubai Terminal 1”, “to”: “Dubai Terminal 2"}, {"from": "Damascus Airport”, "to": “Dubai Terminal 1"},{"from": “Dubai Terminal 2”, “to”: “Kuala Lumpur Airport"}, {"from": "Hama”, “to”: “Damascus Airport"}] 
 
 Output: ["Hama”, “Damascus”, “Dubai”, “Kuala Lumpur”, “Kuantan”] 
+
+
+
+--------------
+
+12- Given a base-10 integer,n , convert it to binary (base-2). 
+Then find and print the base-10 integer denoting the maximum number of consecutive 1's in n's binary representation. When working with different bases, it is common to show the base as a subscript.
+
+Example
+n =125
+
+The binary representation of 125  is 1111101. In base , there are 5 consecutive ones in two groups. 
+Print the maximum, 5.
+
+
+Print a single base-10 integer that denotes the maximum number of consecutive 1's in the binary representation of n.
+
+ Input   5
+ Output 1
+
+ Input 13
+ Output 2
