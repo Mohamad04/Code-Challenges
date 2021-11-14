@@ -1,33 +1,22 @@
-var storageNames = ['Saleem', 'Salim', 'Salih', 'MOHaMMad'];
+let inputOfWords = ["Saleem", "Salim", "Salih", "cola", "sal", "i"];
 
+function autoCompete( searchInput ) {
 
-function autoComplete(input) {
-    input.toLowerCase();
-    storageNames.sort();
+  if ( searchInput == 0 || searchInput == undefined )
+    return "wrong input ";
+else {
 
-    let output = [];
+	let result = [];
 
-    storageNames.forEach(word => {
-        Array.from(word).forEach(letter => {
-
-            let final = input.length + word.indexOf(letter);
-            let start = word.indexOf(letter);
-            let firstLetters;
-
-
-         if (final <= word.length ) {
-                firstLetters = word.toLowerCase().slice(start, final);
-            }
-
-            if (firstLetters == input) {
-                output.push(word);
-            }
-        })
-    });
-
-    return  Array.from(new Set(output));
+  inputOfWords.forEach( word => {
+     if (  word.toLocaleLowerCase().search(searchInput) >=  0  )
+     result.push( word);
+  })
+    return result.sort();
+  }
 }
 
-console.log(autoComplete('s'));   // [‘Saleem’, ‘Salih’, ‘Salim’]
-console.log(autoComplete('sali'));  // [‘Salih’, ‘Salim’]
-console.log(autoComplete('d'));    // [MOHaMMad]
+console.log(autoCompete( "i" ) ); 
+console.log(autoCompete( "a") ); 
+console.log(autoCompete( "ee" ) ); 
+console.log(autoCompete( 0 ) ); 

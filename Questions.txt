@@ -121,7 +121,7 @@ Input: words = ["Hello","Alaska","Dad","Peace"]
 Output: ["Alaska","Dad"]
 
 
----------------
+---------------				---------------
 
 10-	Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.
 Note: You can only move either down or right at any point in time.
@@ -138,7 +138,7 @@ Input: grid = [[1,2,3],[4,5,6]]
 Output: 12
 
 
----------------
+---------------				---------------
 
 11-	Given a stack of boarding passes for various transportation that will take you from a point A to point B via several stops on the way. All of the boarding passes are out of order and you don't know where your journey starts, nor where it ends. Input format: array of objects Output format: array of sorted stops in a trip 
 
@@ -150,7 +150,7 @@ Output: ["Hama”, “Damascus”, “Dubai”, “Kuala Lumpur”, “Kuantan�
 
 
 
---------------
+---------------				---------------
 
 12- Given a base-10 integer,n , convert it to binary (base-2). 
 Then find and print the base-10 integer denoting the maximum number of consecutive 1's in n's binary representation. When working with different bases, it is common to show the base as a subscript.

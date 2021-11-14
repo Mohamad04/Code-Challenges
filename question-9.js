@@ -23,8 +23,8 @@ function americanKeyboard(array) {
             lettersFoundInRow2 = 0,
             lettersFoundInRow3 = 0;
 
-        let newWord =  Array.from(new Set(word));
-        newWord.forEach(letter => {
+        let searchWord =  new Set(word);
+        searchWord.forEach(letter => {
             if (row1.includes(letter)) {
                 lettersFoundInRow1++;
             }
@@ -35,12 +35,12 @@ function americanKeyboard(array) {
                 lettersFoundInRow3++;
             }
         })
-        if (lettersFoundInRow1 == newWord.length || lettersFoundInRow2 == newWord.length || lettersFoundInRow3 == newWord.length) {
+        if (lettersFoundInRow1 == searchWord.size || lettersFoundInRow2 == searchWord.size || lettersFoundInRow3 == searchWord.size) {
             output.push(word);
         }
     });
     return output;
 }
 
-console.log(americanKeyboard(["Hello", "Alaska", "Dad", "vbmnvcmzx"]));       // ["Alaska","Dad", "vbmnvcmzx"]
-console.log(americanKeyboard(["asdfggfjghklASDFFGG", "", -7, false, 0, NaN])); // ["asdfggfjghklASDFFGG"]
+console.log(americanKeyboard(["Hello", "Alaska", "Dad", "vbmnvcmzx"]));     
+console.log(americanKeyboard(["asdfggfjghklASDFFGG", "", -7, false, 0, NaN])); 
